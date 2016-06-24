@@ -1,0 +1,42 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
+
+
+black = #121314
+white = #fff
+containerWidth = 600px
+containerHeight = 380px
+fontSizeNormal = 24px
+fontSizeBig = 120px
+fontFamily = "Roboto Mono"
+
+body
+  width 100vw
+  height 100vh
+  padding 0
+  margin 0
+  background black
+  font-family fontFamily
+  font-weight 300
+  .container
+    width containerWidth
+    height containerHeight
+    background transparent
+    position absolute
+    top 50%
+    left 50%
+    margin-left -(containerWidth/2)
+    margin-top -(containerHeight/2)
+    #labelOne, #labelTwo, #counter
+      color white
+      width 100%
+      text-align center
+      position absolute
+    #labelOne, #labelTwo
+      font-size fontSizeNormal
+    #labelOne
+      top 0
+    #labelTwo
+      bottom 0
+    #counter
+      font-size fontSizeBig
+      line-height containerHeight

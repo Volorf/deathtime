@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css?family=RobotoMono");
+body {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  background: #121314;
+  font-family: "Roboto Mono";
+  font-weight: 300;
+}
+body .container {
+  width: 600px;
+  height: 380px;
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -300px;
+  margin-top: -190px;
+}
+body .container #labelOne,
+body .container #labelTwo,
+body .container #counter {
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+}
+body .container #labelOne,
+body .container #labelTwo {
+  font-size: 24px;
+}
+body .container #labelOne {
+  top: 0;
+}
+body .container #labelTwo {
+  bottom: 0;
+}
+body .container #counter {
+  font-size: 120px;
+  line-height: 380px;
+}
