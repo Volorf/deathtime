@@ -38,16 +38,13 @@ window.setInterval(someFunc, 10);
 // https://en.wikipedia.org/wiki/World_population
 var worldEarth = 7300000000
 
-// Death of child (under-five) per year
-// http://apps.who.int/gho/data/view.main.CM1300N?lang=en
-var childDeath = (2820 + 1939 + 985) * 1000
 
-// Adult mortality (15-60) per year
-// http://apps.who.int/gho/data/view.main.1350?lang=en
-var adultDeath = (152 + 121 + 182) * (worldEarth / 1000)
+// Here is actual birth and death data http://apps.who.int/gho/data/view.main.CBDR2020?lang=en
+
 
 // All
-var allDeath = childDeath + adultDeath
+var allDeath = (worldEarth / 1000) * 7.8
+var allBirth = (worldEarth / 1000) * 23.4
 
 // Death per second
 var deathSecond = allDeath / 365 / 24 / 60 / 60
