@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=RobotoMono");
 * {
-  transition: all ease 0.5s;
+  transition: all ease 0s;
 }
 body {
   width: 100vw;
