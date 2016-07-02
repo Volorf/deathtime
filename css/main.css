@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=RobotoMono");
 * {
-  transition: all ease 0s;
+  transition: all ease 0.5s;
 }
 body {
   width: 100vw;
@@ -88,6 +88,9 @@ body .container #counter {
 .counterToNothing {
   opacity: 0;
   transition: opacity 0s;
+}
+span {
+  transition: all ease 0s !important;
 }
 @-moz-keyframes circleWhite {
   0% {
