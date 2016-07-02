@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=RobotoMono");
+* {
+  transition: all ease 0.5s;
+}
 body {
   width: 100vw;
   height: 100vh;
@@ -7,12 +10,37 @@ body {
   background: #121314;
   font-family: "Roboto Mono", monospace;
   font-weight: 300;
+  color: #fff;
+}
+body .buttonSwitcher {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  z-index: 1;
+}
+body .buttonSwitcher:hover {
+  animation: circlePulse 0.5s ease infinite;
+  cursor: pointer;
+}
+body .circle {
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  z-index: 0;
 }
 body .container {
   width: 600px;
   height: 380px;
   background: transparent;
   position: absolute;
+  z-index: 2;
   top: 50%;
   left: 50%;
   margin-left: -300px;
@@ -21,7 +49,6 @@ body .container {
 body .container #labelOne,
 body .container #labelTwo,
 body .container #counter {
-  color: #fff;
   width: 100%;
   text-align: center;
   position: absolute;
@@ -39,4 +66,390 @@ body .container #labelTwo {
 body .container #counter {
   font-size: 120px;
   line-height: 380px;
+}
+.circleWhite {
+  animation: circleWhite 1s ease forwards;
+}
+.circleBlack {
+  animation: circleBlack 1s ease forwards;
+}
+.bgIsWhite {
+  animation: bgIsWhite 0.5s ease forwards;
+}
+.bgIsBlack {
+  animation: bgIsBlack 0.5s ease forwards;
+}
+.textIsBlack {
+  animation: textIsBlack 0.5s ease forwards;
+}
+.buttonSwitcherIsBlack {
+  animation: buttonSwitcherIsBlack 1s ease forwards;
+}
+.counterToNothing {
+  opacity: 0;
+  transition: opacity 0s;
+}
+@-moz-keyframes circleWhite {
+  0% {
+    transform: scale(1);
+    background: #fff;
+  }
+  50% {
+    transform: scale(200);
+    background: #fff;
+  }
+  99% {
+    transform: scale(1);
+    background: #fff;
+  }
+  100% {
+    transform: scale(1);
+    background: #121314;
+  }
+}
+@-webkit-keyframes circleWhite {
+  0% {
+    transform: scale(1);
+    background: #fff;
+  }
+  50% {
+    transform: scale(200);
+    background: #fff;
+  }
+  99% {
+    transform: scale(1);
+    background: #fff;
+  }
+  100% {
+    transform: scale(1);
+    background: #121314;
+  }
+}
+@-o-keyframes circleWhite {
+  0% {
+    transform: scale(1);
+    background: #fff;
+  }
+  50% {
+    transform: scale(200);
+    background: #fff;
+  }
+  99% {
+    transform: scale(1);
+    background: #fff;
+  }
+  100% {
+    transform: scale(1);
+    background: #121314;
+  }
+}
+@keyframes circleWhite {
+  0% {
+    transform: scale(1);
+    background: #fff;
+  }
+  50% {
+    transform: scale(200);
+    background: #fff;
+  }
+  99% {
+    transform: scale(1);
+    background: #fff;
+  }
+  100% {
+    transform: scale(1);
+    background: #121314;
+  }
+}
+@-moz-keyframes circleBlack {
+  0% {
+    transform: scale(1);
+    background: #121314;
+  }
+  50% {
+    transform: scale(200);
+    background: #121314;
+  }
+  99% {
+    transform: scale(1);
+    background: #121314;
+  }
+  100% {
+    transform: scale(1);
+    background: #fff;
+  }
+}
+@-webkit-keyframes circleBlack {
+  0% {
+    transform: scale(1);
+    background: #121314;
+  }
+  50% {
+    transform: scale(200);
+    background: #121314;
+  }
+  99% {
+    transform: scale(1);
+    background: #121314;
+  }
+  100% {
+    transform: scale(1);
+    background: #fff;
+  }
+}
+@-o-keyframes circleBlack {
+  0% {
+    transform: scale(1);
+    background: #121314;
+  }
+  50% {
+    transform: scale(200);
+    background: #121314;
+  }
+  99% {
+    transform: scale(1);
+    background: #121314;
+  }
+  100% {
+    transform: scale(1);
+    background: #fff;
+  }
+}
+@keyframes circleBlack {
+  0% {
+    transform: scale(1);
+    background: #121314;
+  }
+  50% {
+    transform: scale(200);
+    background: #121314;
+  }
+  99% {
+    transform: scale(1);
+    background: #121314;
+  }
+  100% {
+    transform: scale(1);
+    background: #fff;
+  }
+}
+@-moz-keyframes bgIsWhite {
+  0% {
+    background: #121314;
+  }
+  50% {
+    background: #121314;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes bgIsWhite {
+  0% {
+    background: #121314;
+  }
+  50% {
+    background: #121314;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes bgIsWhite {
+  0% {
+    background: #121314;
+  }
+  50% {
+    background: #121314;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes bgIsWhite {
+  0% {
+    background: #121314;
+  }
+  50% {
+    background: #121314;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-moz-keyframes bgIsBlack {
+  0% {
+    background: #fff;
+  }
+  50% {
+    background: #fff;
+  }
+  100% {
+    background: #121314;
+  }
+}
+@-webkit-keyframes bgIsBlack {
+  0% {
+    background: #fff;
+  }
+  50% {
+    background: #fff;
+  }
+  100% {
+    background: #121314;
+  }
+}
+@-o-keyframes bgIsBlack {
+  0% {
+    background: #fff;
+  }
+  50% {
+    background: #fff;
+  }
+  100% {
+    background: #121314;
+  }
+}
+@keyframes bgIsBlack {
+  0% {
+    background: #fff;
+  }
+  50% {
+    background: #fff;
+  }
+  100% {
+    background: #121314;
+  }
+}
+@-moz-keyframes textIsBlack {
+  0% {
+    color: #fff;
+  }
+  50% {
+    color: #fff;
+  }
+  100% {
+    color: #121314;
+  }
+}
+@-webkit-keyframes textIsBlack {
+  0% {
+    color: #fff;
+  }
+  50% {
+    color: #fff;
+  }
+  100% {
+    color: #121314;
+  }
+}
+@-o-keyframes textIsBlack {
+  0% {
+    color: #fff;
+  }
+  50% {
+    color: #fff;
+  }
+  100% {
+    color: #121314;
+  }
+}
+@keyframes textIsBlack {
+  0% {
+    color: #fff;
+  }
+  50% {
+    color: #fff;
+  }
+  100% {
+    color: #121314;
+  }
+}
+@-moz-keyframes buttonSwitcherIsBlack {
+  0% {
+    background: #fff;
+  }
+  50% {
+    background: #fff;
+  }
+  100% {
+    background: #121314;
+  }
+}
+@-webkit-keyframes buttonSwitcherIsBlack {
+  0% {
+    background: #fff;
+  }
+  50% {
+    background: #fff;
+  }
+  100% {
+    background: #121314;
+  }
+}
+@-o-keyframes buttonSwitcherIsBlack {
+  0% {
+    background: #fff;
+  }
+  50% {
+    background: #fff;
+  }
+  100% {
+    background: #121314;
+  }
+}
+@keyframes buttonSwitcherIsBlack {
+  0% {
+    background: #fff;
+  }
+  50% {
+    background: #fff;
+  }
+  100% {
+    background: #121314;
+  }
+}
+@-moz-keyframes circlePulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes circlePulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-o-keyframes circlePulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes circlePulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
